@@ -12,3 +12,7 @@ appendChild()<br>
 push
 
 No vídeo dela original, ela utilizou 8 imagens,<br> sendo que a outra imagem procurada é a<br> mesma imagem original duplicada.
+
+Jogo feito para o aprendizado de funções em Javascript:<br>
+Tecnologias usadas: #HTML, #CSS e #JAVASCRIPT
+#JSGAME

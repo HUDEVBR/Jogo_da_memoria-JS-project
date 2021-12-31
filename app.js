@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var carta = document.createElement('img')
             carta.setAttribute('src', 'images/blank.png')
             carta.setAttribute('data-id',  i)
-            // carta.addEventListener('click', virarcarta);
+            carta.addEventListener('click', virarcarta);
             grid.appendChild(carta);
         }
     }

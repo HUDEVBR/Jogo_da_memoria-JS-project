@@ -118,7 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     cartaArray.sort(() => 0.5 - Math.random())
-    //teste de commit
 
     const grid = document.querySelector('.grid')
     const mostrarResultado = document.querySelector('#result')
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var carta = document.createElement('img')
             carta.setAttribute('src', 'images/blank.png')
             carta.setAttribute('data-id',  i)
-            // carta.AddEventListener('click', virarcarta);
+            // carta.addEventListener('click', virarcarta);
             grid.appendChild(carta);
         }
     }
@@ -147,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Você encontrou o par ! :D')
             cartas[opcaoUmId].setAttribute('src', 'images/white.png')
             cartas[opcaoDoisId].setAttribute('src', 'images/white.png')
-            cartasVencidas.push(CartasEscolhidas)
+            cartasVencidas.push(cartasEscolhidas)
         } else {
             cartas[opcaoUmId].setAttribute('src', 'images/blank.png')
             cartas[opcaoDoisId].setAttribute('src', 'images/blank.png')
@@ -157,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cartasEscolhidasId = []
         mostrarResultado.textContent = cartasVencidas.length
         if (cartasVencidas.length === cartaArray.length/2){
-            mostrarResultado.textContent = 'Parabéns, você encontrou todos !'
+            mostrarResultado.textContent = 'Parabéns ! Você encontrou todos !'
         }
     }
 
@@ -172,8 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    criarTabuleiroQuadrado()
-    //modificado
+    criarTabuleiro()
+    confere()
+    virarcarta()
   
 
 })
